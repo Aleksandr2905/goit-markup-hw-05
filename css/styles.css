@@ -13,6 +13,8 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
@@ -172,7 +174,10 @@ img {
 .feature-list {
   display: flex;
   column-gap: 24px;
-  min-width: 264px;
+}
+
+.feature-item {
+  max-width: 264px;
 }
 
 .section-subject {
