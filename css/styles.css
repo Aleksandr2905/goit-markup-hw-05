@@ -30,15 +30,13 @@ h2,
 h3,
 h4,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 ul,
 ol {
-  margin-top: 0;
-  margin-top: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -46,7 +44,7 @@ img {
 }
 
 .container {
-  max-width: 1158px;
+  width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -127,9 +125,7 @@ img {
 
 .hero {
   background-color: var(--secondary-text-color);
-  text-align: center;
   padding: 188px 0;
-  margin-bottom: 120px;
 }
 
 .hero-title {
@@ -145,6 +141,9 @@ img {
 }
 
 .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -178,14 +177,16 @@ img {
   overflow: hidden;
 }
 
+.section {
+  padding-bottom: 120px;
+}
+
 .section-item {
   display: flex;
-  padding-bottom: 120px;
   column-gap: 24px;
 }
 
 .section-title {
-  padding-top: 120px;
   margin-bottom: 72px;
   text-align: center;
   font-size: 36px;
@@ -197,9 +198,9 @@ img {
 }
 
 .feature-list {
+  padding-top: 120px;
   display: flex;
   column-gap: 24px;
-  margin-bottom: 120px;
 }
 
 .feature-item {
@@ -207,7 +208,6 @@ img {
 }
 
 .section-subject {
-  margin-top: 32px;
   margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
@@ -217,7 +217,6 @@ img {
 }
 
 .section-subtitle {
-  margin-bottom: 32px;
   justify-content: center;
   align-items: center;
   font-size: 16px;
@@ -225,6 +224,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.32px;
   color: var(--primary-text-color);
+}
+
+.container-team {
+  padding-top: 120px;
 }
 
 .team {
@@ -238,13 +241,10 @@ img {
 }
 
 .section-list {
-  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 32px;
-  margin-bottom: 120px;
-  justify-content: center;
   background-color: #ffffff;
 }
 
