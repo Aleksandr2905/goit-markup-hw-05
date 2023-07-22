@@ -53,6 +53,7 @@ img {
 
 .page-header-container {
   display: flex;
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
 }
 
 .page-nav {
