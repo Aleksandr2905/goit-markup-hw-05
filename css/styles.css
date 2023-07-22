@@ -271,9 +271,6 @@ img {
 
 .footer {
   padding: 100px 0;
-}
-
-.page-footer {
   background-color: var(--secondary-text-color);
   padding-top: 140px;
 }
