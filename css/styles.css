@@ -269,8 +269,11 @@ img {
 
 /* ======= SITE FOOTER =======*/
 
-.page-footer {
+.footer {
   padding: 100px 0;
+}
+
+.page-footer {
   background-color: var(--secondary-text-color);
 }
 
