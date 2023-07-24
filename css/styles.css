@@ -344,8 +344,8 @@ img {
   fill: var(--customers-color);
 }
 
-.customers-item .customers-link:hover,
-.customers-item .customers-link:focus {
+.customers-link:hover,
+.customers-link:focus {
   fill: #404bbf;
   border: 1px solid #404bbf;
 }
