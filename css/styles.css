@@ -3,6 +3,7 @@
   --secondary-text-color: #2e2f42;
   --accent-color: #4d5ae5;
   --background-primary-color: #ffffff;
+  --customers-color: #8e8f99;
 }
 
 body {
@@ -330,25 +331,27 @@ img {
 .customers-item {
   width: 168px;
   height: 88px;
-  /* border-radius: 4px;
-  border: 1px solid #8e8f99; */
 }
 
 .customers-link {
   border-radius: 4px;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--customers-color);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  fill: #8e8f99;
+  fill: var(--customers-color);
 }
 
-.customers-item .customers-link:hover,
-.customers-item .customers-link:focus {
+.customers-link:hover,
+.customers-link:focus {
   fill: #404bbf;
   border: 1px solid #404bbf;
+}
+
+.customers-icon {
+  /* fill: currentColor; */
 }
 
 /* ======= SITE FOOTER =======*/
@@ -465,6 +468,8 @@ img {
   border: 1px solid transparent;
   color: #fff;
   background: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -481,12 +486,12 @@ img {
 }
 
 .photo-item {
+  display: block;
   width: calc((100% - 48px) / 3);
 }
 
 .photo-item:hover,
 .photo-item:focus {
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
