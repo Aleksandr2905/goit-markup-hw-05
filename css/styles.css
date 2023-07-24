@@ -341,17 +341,17 @@ img {
   height: 100%;
   border-radius: 4px;
   border: 1px solid var(--customers-color);
-  fill: var(--customers-color);
+  color: var(--customers-color);
 }
 
 .customers-link:hover,
 .customers-link:focus {
   border: 1px solid #404bbf;
+  color: #404bbf;
 }
 
-.customers-icon:hover,
-.customers-icon:focus {
-  fill: #404bbf;
+.customers-icon {
+  fill: currentColor;
 }
 
 /* ======= SITE FOOTER =======*/
