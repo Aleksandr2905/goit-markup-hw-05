@@ -89,6 +89,23 @@ img {
   gap: 40px;
 }
 
+.site-nav-link.link-nav-active {
+  position: relative;
+  color: #404bbf;
+}
+
+.link-nav-active::after {
+  position: absolute;
+  left: 0;
+  top: calc(100% - 4px);
+  display: block;
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: #404bbf;
+}
+
 .site-nav-link {
   display: inline-block;
   padding-top: 24px;
