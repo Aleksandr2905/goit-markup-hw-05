@@ -547,3 +547,84 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+.portfolio-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  transform: translateY(100%);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-function);
+  color: #f4f4fd;
+  background: var(--accent-color);
+}
+
+.photo-item:hover .overlay {
+  transform: translateY(0%);
+}
+
+/* ======= BACKDROP =======*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition-property: visibility, opacity, transform;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-function);
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(0.5);
+}
+
+/* ======= MODAL WINDOW =======*/
+
+.modal {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 408px;
+  height: 584px;
+  border-radius: 4px;
+  background: #fcfcfc;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 8px;
+  line-height: 0;
+}
+
+.modal-close-icon {
+  fill: var(--secondary-text-color);
+}
+
+/* ======= MODAL FORM =======*/
