@@ -500,7 +500,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
-  transition-property: border, color, box-shadow, background;
+  transition-property: border-color, box-shadow, background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-function);
   background: #f4f4fd;
