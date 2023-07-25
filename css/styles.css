@@ -91,10 +91,10 @@ img {
   gap: 40px;
 }
 
-.site-nav-link .link-nav-active {
+/* .site-nav-link .link-nav-active {
   position: relative;
   color: #404bbf;
-}
+} */
 
 .link-nav-active::after {
   position: absolute;
@@ -110,12 +110,14 @@ img {
 }
 
 .site-nav-link {
+  position: relative;
   display: inline-block;
   padding-top: 24px;
   padding-bottom: 24px;
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-function);
+  color: #404bbf;
 }
 
 .site-nav .link {
