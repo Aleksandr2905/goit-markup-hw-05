@@ -93,7 +93,7 @@ img {
 
 .link-nav-active {
   position: relative;
-  color: #404bbf;
+  /* color: #404bbf; */
 }
 
 .link-nav-active::after {
@@ -110,14 +110,13 @@ img {
 }
 
 .site-nav-link {
-  /* position: relative; */
   display: inline-block;
   padding-top: 24px;
   padding-bottom: 24px;
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-function);
-  /* color: #404bbf; */
+  color: #404bbf;
 }
 
 .site-nav .link {
@@ -590,7 +589,7 @@ img {
   height: 100%;
   opacity: 1;
   visibility: visible;
-  transition-property: visibility, opacity, transform;
+  transition-property: visibility, opacity;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-function);
   background-color: rgba(46, 47, 66, 0.4);
@@ -607,11 +606,11 @@ img {
 
 .modal {
   position: absolute;
-  top: 80px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50% -50%) scale(1);
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   border-radius: 4px;
   background: #fcfcfc;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -620,10 +619,19 @@ img {
 
 .modal-close-btn {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 24px;
   right: 24px;
-  padding: 8px;
+  padding: 0;
   line-height: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-function);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
 }
 
 .modal-close-icon {
