@@ -489,6 +489,12 @@ img {
   margin-bottom: 72px;
 }
 
+.filter-btn {
+  transition-property: border-color box-shadow, background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-function);
+}
+
 .btn {
   display: block;
   padding: 12px 24px;
@@ -500,9 +506,9 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
-  transition-property: border-color, box-shadow, background-color;
+  /* transition-property: border-color box-shadow, background-color;
   transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-function);
+  transition-timing-function: var(--transition-function); */
   background: #f4f4fd;
   border-radius: 4px;
   border: 1px solid var(--cornflower, #e7e9fc);
@@ -534,6 +540,7 @@ img {
 .photo-item {
   display: block;
   width: calc((100% - 48px) / 3);
+  cursor: pointer;
 }
 
 .photo-link {
@@ -574,7 +581,8 @@ img {
   background: var(--accent-color);
 }
 
-.photo-item:hover .overlay {
+.portfolio-overlay:hover .overlay,
+.portfolio-overlay:focus .overlay {
   transform: translateY(0%);
 }
 
