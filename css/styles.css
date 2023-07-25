@@ -93,7 +93,7 @@ img {
 
 .link-nav-active {
   position: relative;
-  /* color: #404bbf; */
+  color: #404bbf;
 }
 
 .link-nav-active::after {
@@ -116,7 +116,7 @@ img {
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-function);
-  color: #404bbf;
+  /* color: #404bbf; */
 }
 
 .site-nav .link {
