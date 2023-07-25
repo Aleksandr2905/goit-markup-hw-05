@@ -89,11 +89,12 @@ img {
 .site-nav {
   display: flex;
   gap: 40px;
+  color: #404bbf;
 }
 
 .link-nav-active {
   position: relative;
-  color: #404bbf;
+  /* color: #404bbf; */
 }
 
 .link-nav-active::after {
