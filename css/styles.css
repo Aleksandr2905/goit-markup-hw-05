@@ -116,19 +116,20 @@ img {
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-function);
-  /* color: #404bbf; */
-}
-
-.site-nav .link {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  /* color: #404bbf; */
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
+  color: #404bbf;
+}
+
+.site-nav-link.link-nav-active {
   color: #404bbf;
 }
 
@@ -618,8 +619,6 @@ img {
   visibility: hidden;
   pointer-events: none;
   transform: scale(0.5);
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-function);
 }
 
 /* ======= MODAL WINDOW =======*/
