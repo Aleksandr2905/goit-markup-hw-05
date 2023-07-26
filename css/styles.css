@@ -630,7 +630,7 @@ img {
   width: 408px;
   min-height: 584px;
   border-radius: 4px;
-  transition-property: box-shadow;
+  transition-property: box-shadow, background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-function);
   background: #fcfcfc;
