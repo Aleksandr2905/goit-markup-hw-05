@@ -495,7 +495,7 @@ img {
   background-color: #f4f4fd;
   color: var(--accent-color);
   border: 1px solid var(--cornflower, #e7e9fc);
-  transition-property: color, border, box-shadow, background-color;
+  transition-property: border-color, box-shadow, background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-function);
 }
