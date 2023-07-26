@@ -116,6 +116,7 @@ img {
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-function);
+  color: #404bbf;
 }
 
 .site-nav .link {
