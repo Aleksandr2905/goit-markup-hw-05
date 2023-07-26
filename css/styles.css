@@ -495,7 +495,7 @@ img {
   background-color: #f4f4fd;
   color: var(--accent-color);
   border: 1px solid var(--cornflower, #e7e9fc);
-  transition-property: color, border, box-shadow, background-color;
+  transition-property: border-color, box-shadow, background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-function);
 }
@@ -603,7 +603,7 @@ img {
   height: 100vh;
   opacity: 1;
   visibility: visible;
-  transition-property: visibility, opacity, transform;
+  transition-property: transform, visibility, opacity;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-function);
   background-color: rgba(46, 47, 66, 0.4);
@@ -629,9 +629,6 @@ img {
   background: #fcfcfc;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  transition-property: background-color, box-shadow;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-function);
 }
 
 .modal-close-btn {
