@@ -618,6 +618,8 @@ img {
   visibility: hidden;
   pointer-events: none;
   transform: scale(0.5);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-function);
 }
 
 /* ======= MODAL WINDOW =======*/
