@@ -491,7 +491,7 @@ img {
   margin-bottom: 72px;
 }
 
-.pointer {
+.filter-btn {
   background-color: #f4f4fd;
   color: var(--accent-color);
   border: 1px solid var(--cornflower, #e7e9fc);
@@ -511,12 +511,11 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
-
   border-radius: 4px;
 }
 
-.pointer:hover,
-.pointer:focus {
+.filter-btn:hover,
+.filter-btn:focus {
   border: 1px solid transparent;
   color: var(--background-primary-color);
   background: #404bbf;
