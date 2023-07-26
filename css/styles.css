@@ -492,12 +492,12 @@ img {
 }
 
 .filter-btn {
-  background-color: #f4f4fd;
+  /* background-color: #f4f4fd;
   color: var(--accent-color);
   border: 1px solid var(--cornflower, #e7e9fc);
-  transition-property: border-color, box-shadow, background-color;
+  transition-property: color, border, box-shadow, background-color;
   transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-function);
+  transition-timing-function: var(--transition-function); */
 }
 
 .btn {
@@ -512,10 +512,16 @@ img {
   line-height: 1.5;
   letter-spacing: 0.64px;
   border-radius: 4px;
+  background-color: #f4f4fd;
+  color: var(--accent-color);
+  border: 1px solid var(--cornflower, #e7e9fc);
+  transition-property: color, border, box-shadow, background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-function);
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
+.btn:hover,
+.btn:focus {
   border: 1px solid transparent;
   color: var(--background-primary-color);
   background: #404bbf;
